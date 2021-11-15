@@ -32,7 +32,7 @@ base.addSample((1, 1), (0,))
 treinamento = BackpropTrainer(rede, dataset = base, learningrate = 0.01,
 momentum = 0.06)
 
-for i in range(0, 30000):
+for i in range(0, 3000):
     erro = treinamento.train()
     if i % 1000 == 0:
         print(f'Erro: {erro} %')

@@ -4,9 +4,9 @@ from pybrain.structure import FullConnection
 
 net = FeedForwardNetwork()
 
-inLayer = LinearLayer(4)
+inLayer = LinearLayer(3)
 hiddenLayer = SigmoidLayer(4)
-outLayer = LinearLayer(3)
+outLayer = LinearLayer(4)
 
 net.addInputModule(inLayer)
 net.addModule(hiddenLayer)
@@ -21,4 +21,3 @@ net.addConnection(hidden_to_out)
 net.sortModules()
 
 print(in_to_hidden.params)
-print(hidden_to_out.params)

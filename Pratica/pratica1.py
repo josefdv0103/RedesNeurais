@@ -41,4 +41,3 @@ for i in range(0, 30000):
 
 print(net.activate([1, 1, 1, 1]))
 print(net.activate([2, 2, 2, 2]))
-
